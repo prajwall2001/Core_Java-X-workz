@@ -12,7 +12,7 @@ public class MedicinesRunner {
 		repo.save("Aspirin");
 		repo.save("Antibiotic");
 		repo.save("Painkiller");
-		repo.save("Cough Syrup");
+		repo.save("Cough Syrup");	
 		repo.save("Vitamin C");
 		repo.save("Allergy Medicine");
 		repo.save("Antacid");
