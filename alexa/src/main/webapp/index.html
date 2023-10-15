@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farmer</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+</head>
+<style>
+body {
+	background-color: grey;
+}
+
+.btn-primary {
+	background-color: rgb(255, 0, 0);
+	border-color: rgb(0, 255, 64);
+	width: 10%;
+}
+
+.btn-primary:hover {
+	background-color: rgb(0, 255, 0);
+	border-color: #0056b3;
+}
+.loss{
+  background-attachment: fixed;
+  background-color: aqua;
+  font-size: large;
+  box-shadow: #0056b3;
+}
+</style>
+<body>
+	<nav class="navbar bg-dark border-bottom border-body"
+		data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="index.html">Farmer</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<form class="row g-3" action="farmers">
+		<div class="col-md-6">
+			<label for="inputName" class="form-label">Name</label> <input
+				type="text" class="form-control" id="inputName" name="name">
+		</div>
+		<div class="col-md-3">
+			<label for="inputAcres" class="form-label">Acres</label> <input
+				type="acres" class="form-control" id="inputAcres" name="acres">
+		</div>
+		<div class="col-md-4">
+			<label for="inputSoilType" class="form-label">Soil Type</label> <select
+				id="inputSoilType" class="form-select" name="soilType">
+				<option selected>Choose...</option>
+				<option>Black soil</option>
+				<option>Red soil</option>
+				<option>Sandy soil</option>
+				<option>Peat soil</option>
+				<option>Clay</option>
+				<option>Entisol soil</option>
+				<option>Alkali soil</option>
+				<option>Silt soil</option>
+			</select>
+		</div>
+		<div class="col-md-5">
+			<label for="inputCropType" class="form-label">Crop Type</label> <select
+				id="inputCropType" class="form-select" name="cropType">
+				<option selected>Choose...</option>
+				<option>Maize</option>
+				<option>Wheat</option>
+				<option>Millets</option>
+				<option>Tobacco</option>
+				<option>Cotton</option>
+				<option>Coffee</option>
+				<option>Tea</option>
+				<option>Vegetables</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<label for="inputFertilizer" class="form-label">Fertilizers</label> <select
+				id="inputFertilizer" class="form-select" name="fertilizer">
+				<option selected>Choose...</option>
+				<option>Urea</option>
+				<option>Pottassium</option>
+				<option>Phosphorus</option>
+				<option>Ammonia</option>
+				<option>Nitrogen</option>
+			</select>
+		</div>
+		<div class="col-md-7">
+			<label for="inputSeasons" class="form-label">Seasons</label> <select
+				id="inputSeasons" class="form-select" name="seasons">
+				<option selected>Choose...</option>
+				<option>Spring</option>
+				<option>Summer</option>
+				<option>Fall</option>
+				<option>Winter</option>
+			</select>
+		</div>
+		<div class="col-8">
+			<label for="inputInvestment" class="form-label">Investment</label> <input
+				type="number" class="form-control" id="inputInvestment"
+				placeholder="Ex.10000000" name="investment">
+		</div>
+		<div class="loss">
+			<label for="inputProfit" class="form-label">Profit</label> <input
+				type="profit" class="form-control" id="inputProfit"
+				placeholder="Ex.90%" name="profit">
+		</div>
+		<div class="col-md-10">
+			<label for="inputRTCNumber" class="form-label">RTC Number</label> <input
+				type="Number" class="form-control" id="inputRTCNumber" name="RTCNo">
+		</div>
+		<div class="col-11">
+			<button type="submit" class="btn btn-primary">Save</button>
+		</div>
+	</form>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+</html>

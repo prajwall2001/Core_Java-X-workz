@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weapon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+.form-label {
+	font-weight: bold;
+	color: blue;
+}
+.btn-primary {
+	background-color: rgb(255, 0, 0);
+	border-color: rgb(0, 255, 64);
+	width: 10%;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: rgb(0, 255, 0);
+	border-color: #0056b3;
+}
+</style>
+  <body>
+ <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Weapons</a>
+        <a class="nav-link" href="weapon.html">Home</a>
+       
+      </div>
+    </div>
+  </div>
+</nav>  
+<form class="form-label" action="king">
+  <div class="col-12">
+    <label for="inputName" class="form-label">Weapon Name</label>
+    <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter weapon name">
+  </div>
+  <div class="col-md-4">
+    <label for="inputMadeBy" class="form-label">Made By </label>
+    <select id=""text"" class="form-select" name="madeBy">
+      <option selected>Choose...</option>
+      <option>India</option>
+      <option>Russia</option>
+      <option>USA</option>
+      <option>Australia</option>
+      <option>Pakistan</option>
+    </select>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPrice" class="form-label">Price(in $)</label>
+    <input type="number" class="form-control" id="inputPrice" name="price" placeholder="in $(dollors)">
+  </div>
+  <div class="col-md-4">
+    <label for="inputType" class="form-label">Weapon Type</label>
+    <select id=""inputType"" class="form-select" name="type">
+      <option selected>Choose...</option>
+      <option>Machine Gun</option>
+      <option>AR</option>
+      <option>Snipers</option>
+      <option>SMG</option>
+      <option>Shotguns</option>
+    </select>
+  </div>
+  </div>
+  <br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Save</button>
+  </div>
+</form>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
