@@ -59,7 +59,6 @@
 	</nav>
 	
 <body>
-<h1 style='color:green;'>${msg}</h1><br>
 <span style='color:red;'>
 <c:forEach var="objectErrors" items="${errors}"> ${objectErrors.defaultMessage}<br></c:forEach>
 </span>
@@ -108,42 +107,6 @@
 </form>
 	
 </body>
-<script>
-  function validateForm() {
-    var name = document.getElementById('name').value.trim();
-    var field = document.getElementById('field').value;
-    var exp = document.getElementById('exp').value.trim();
-    var country = document.getElementById('country').value;
-
-    if (name === '') {
-      alert('Please enter your name');
-      return false;
-    }
-
-    if (field === ' ') {
-      alert('Please select a field');
-      return false;
-    }
-
-    if (exp === '' || isNaN(exp)) {
-      alert('Please enter a valid experience (numeric)');
-      return false;
-    }
-
-    if (country === ' ') {
-      alert('Please select a country');
-      return false;
-    }
-
-    return true;
-  }
-
-  document.getElementById('myForm').addEventListener('submit', function (event) {
-    if (!validateForm()) {
-      event.preventDefault();
-    }
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

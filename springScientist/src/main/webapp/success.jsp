@@ -28,11 +28,12 @@
     </div>
   </div>
 </nav>
-<h1 style='color:green;'>${msg}</h1><br>
 
 
 <form action="jaiSriram" method="post">
 </form>
+  <span>${dto}</span>
+<h1 style='color:green;'>${msg}</h1><br>
 </body>
 
 
